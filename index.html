@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head> 
+    <title></title>
+</head>
+<body>
+
+<h2>Mencari Nilai Terkecil dan Nilai Kuadrat</h2>
+<p>Nilai a : <input type="number" id="angka1"></p>
+<p>Nilai b : <input type="number" id="angka2"></p>
+
+<button onclick="myFunction()">cek</button><br>
+<br><p id="nilai"></p>
+<p id="kuadrat"></p>
+
+<script>
+    function myFunction(){
+        const nilai_a = document.getElementById("angka1").value;
+        const a = parseInt(nilai_a);
+        
+        const nilai_b = document.getElementById("angka2").value;
+        const b = parseInt(nilai_b);
+        
+        hasil = Math.min(a,b);
+
+        document.getElementById("nilai").innerHTML = "Nilai minimum : " + hasil;
+        document.getElementById("kuadrat").innerHTML = "Hasil kuadrat : " + a**b;
+        
+    }
+</script>
+</body>
+</html>
